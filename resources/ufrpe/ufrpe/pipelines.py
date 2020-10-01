@@ -12,7 +12,7 @@ import json
 
 class UfrpePipeline:
     def open_spider(self, spider):
-        self.file = open('notices.txt', 'w', encoding='utf8')
+        self.file = open('qa.txt', 'w', encoding='utf8')
 
     def close_spider(self, spider):
         self.file.close()
