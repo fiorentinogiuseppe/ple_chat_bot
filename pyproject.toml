@@ -2,7 +2,7 @@
 name = "ple_chat_bot"
 version = "0.1.0"
 description = "Projeto da cadeira de Mineração de dados educacionais da UFRPE"
-authors = ["Your Name <you@example.com>"]
+authors = ["fiorentinogiuseppebcc@gmail.com"]
 license = "GPL-3.0"
 
 [tool.poetry.dependencies]
