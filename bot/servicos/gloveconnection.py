@@ -3,6 +3,7 @@ import os
 from bot.servicos.singleton import Singleton
 from gensim.models import KeyedVectors
 
+
 @Singleton
 class W2VConnection(object):
     _glove_path = os.getenv("GOVE_PATH")
