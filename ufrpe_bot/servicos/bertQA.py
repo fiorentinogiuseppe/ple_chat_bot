@@ -1,6 +1,6 @@
 import os
 
-from bot.servicos.singleton import Singleton
+from ufrpe_bot.servicos.singleton import Singleton
 from simpletransformers.question_answering import QuestionAnsweringModel
 
 

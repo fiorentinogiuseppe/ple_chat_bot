@@ -9,7 +9,7 @@ services:
             dockerfile: ./docker_images/api/Dockerfile
         volumes:
             - ./src:/app
-            - ./bot:/app/bot
+            - ./ufrpe_bot:/app/ufrpe_bot
             - ./certs:/app/certs
             - ./resources:/app/resources
         ports:

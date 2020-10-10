@@ -1,7 +1,7 @@
 import numpy as np
 
-from bot import Perguntar
-from bot.servicos import bertQA
+from ufrpe_bot import Perguntar
+from ufrpe_bot.servicos import bertQA
 
 
 

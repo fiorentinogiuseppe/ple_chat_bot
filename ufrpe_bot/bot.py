@@ -1,17 +1,17 @@
-from bot import Perguntar
 import traceback
+from .perguntador import Perguntar
 
 
 class Chatbot:
 
     def __init__(self) -> None:
-        self.perguntadores = Perguntar.carregar_perguntadores()
+        self.__perguntadores = Perguntar.carregar_perguntadores()
 
-    def perguntar(self, pergunta: str) -> str:
+    def perguntar(self, texto: str) -> str:
         resposta = ""
-        for perguntar in self.perguntadores:
+        for serv in self.__perguntadores:
             try:
-                resultado = perguntar.verificar(pergunta)
+                resultado = serv.verificar(texto)
                 resposta = resultado
             except Exception as exp:
                 print(traceback.print_exc())

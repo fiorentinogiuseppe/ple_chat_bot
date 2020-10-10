@@ -3,7 +3,7 @@ from ufrpe.items import UfrpeItem
 
 
 class PlebotSpider(scrapy.Spider):
-    name = 'plebot'
+    name = 'questionadores'
     allowed_domains = ['ufrpe.br']
     start_urls = ['http://www.ufrpe.br/br/content/faq-do-per%C3%ADodo-letivo-excepcional']
 

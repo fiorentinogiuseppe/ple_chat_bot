@@ -9,7 +9,7 @@ class Perguntar(ABC):
         cls.__registro.append(cls)
 
     @abstractmethod
-    def perguntar(self, pergunta: str) -> str:
+    def verificar(self, pergunta: str) -> str:
         ...
 
     @classmethod
