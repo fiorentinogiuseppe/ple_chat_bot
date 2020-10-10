@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    api:
+        image: plt_bot_api
+        container_name: api
+        build:
+            context: .
+            dockerfile: ./docker_images/api/Dockerfile
+        volumes:
+            - ./src:/app
+            - ./bot:/app/bot
+            - ./certs:/app/certs
+            - ./resources:/app/resources
+        ports:
+            - 8080:8080
+        command: uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8080 --ssl-keyfile=/app/certs/privkey3.pem --ssl-certfile=/app/certs/fullchain3.pem
+        restart: always
+        network_mode: "host"
+        environment:
+            - BERT_PATH=/app/resources/bert-base-portuguese-cased/
+
