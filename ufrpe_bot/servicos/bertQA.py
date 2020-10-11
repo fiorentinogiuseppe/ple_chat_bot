@@ -10,7 +10,9 @@ class QuestionAnswering(object):
     _model_type = os.getenv("MODEL_TYPE")
 
     def __init__(self):
+        print("Iniciando bert")
         self.model = QuestionAnsweringModel(self._model_type, self._model_path)
+        print("lazy loading")
         self.model.lazy_loading = True
 
     def __str__(self):
