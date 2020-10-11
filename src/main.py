@@ -39,8 +39,8 @@ async def pong():
 @app.post("/responde", response_model=StockOut, status_code=200)
 def get_prediction(payload: StockIn):
     chat = Chatbot()
-    chat.perguntar(payload.texto)
-    return {'resposta': ' kk! sla,vey'}
+    print()
+    return {'resposta': chat.perguntar(payload.texto)}
 
 
 if __name__ == '__main__':
