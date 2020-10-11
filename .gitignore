@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 .idea/
 /resources/wordembeeding/glove_s50.txt
+/resources/glove/glove_s50.txt
