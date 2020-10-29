@@ -11,7 +11,8 @@ class QuestionAnswering(object):
 
     def __init__(self):
         print("Iniciando bert")
-        self.model = QuestionAnsweringModel(self._model_type, self._model_path)
+        self.model = QuestionAnsweringModel(self._model_type, self._model_path, use_cuda=False)
+
         print("lazy loading")
         self.model.lazy_loading = True
 
